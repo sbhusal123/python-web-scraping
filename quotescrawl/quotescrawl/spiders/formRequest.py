@@ -1,5 +1,6 @@
 import scrapy
 from scrapy.http import FormRequest
+from scrapy.utils.response import open_in_browser
 from ..items import QuotescrawlItem
 
 
@@ -11,6 +12,7 @@ class QuoteLoginFormSpider(scrapy.Spider):
     ]
 
     def start_scraping(self, response):
+        open_in_browser(response)
         items = QuotescrawlItem()
 
         # Parse the content
