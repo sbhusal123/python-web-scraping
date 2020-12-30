@@ -12,3 +12,11 @@ class PaginatedBooksDetailsItem(scrapy.Item):
     price = scrapy.Field()
     upc = scrapy.Field()
     current_link = scrapy.Field()
+
+
+class CategoeyPaginatedBooksDetailsItem(scrapy.Item):
+    category = scrapy.Field()
+    name = scrapy.Field()
+    price = scrapy.Field()
+    upc = scrapy.Field()
+    current_link = scrapy.Field()
