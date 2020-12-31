@@ -6,7 +6,7 @@ from ..items import QuotescrawlItem
 
 class QuoteLoginFormSpider(scrapy.Spider):
 
-    name = "quotes-form"
+    name = "login-spider"
     start_urls = [
         'https://quotes.toscrape.com/login'
     ]

@@ -11,7 +11,7 @@ base_url = "http://quotes.toscrape.com/api/quotes?page={page_number}"
 
 
 class ScrollSpider(scrapy.Spider):
-    name = 'scroll'
+    name = 'scroll-quotes-spider'
     start_urls = [base_url.format(page_number=1)]
 
     def parse(self, response):
